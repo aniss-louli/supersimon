@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Super Simon</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">    
+        
+    </head>
+    <body>
+        <div id="menu" class="pure-g">
+            <div id="header" class="pure-u-1-2">
+                <h1 id="title">Super Simon<img id="help" src="public/5a4613abd099a2ad03f9c992.png" alt="Règles du jeu"/></h1>
+            </div>
+        </div>
+
+        <div id="row" class="pure-g">
+            <div id="column" class="pure-u-1-2">
+
+                <div id="game">
+                    <table id="simon">
+                        <tr>
+                            <td id="red"></td>
+                            <td id="green"></td>
+                        </tr>
+                        <tr>
+                            <td id="yellow"></td>
+                            <td id="blue"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="info_player" class="hidden">
+                    <div id="arrow" data-popper-arrow></div>
+                </div>
+
+                <div id="tools">
+                    <button id="start" class="button-success pure-button">Start</button>
+                    <button id="restart" class="button-warning pure-button">Restart</button>
+                </div>
+
+            </div>
+        </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="index.js"></script>
+    </body>
+</html>
